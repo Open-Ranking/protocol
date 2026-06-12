@@ -20,6 +20,12 @@ The detailed behavior of each endpoint is defined in separate **OREs** (Open Ran
 | `POST /search/pubkeys` | [ORE-05](05.md) |
 | `POST /followers` | [ORE-06](06.md) |
 
+## Auth, Payments & Discovery
+
+| Topic | ORE |
+|---|---|
+| Authentication | [ORE-A](A.md) |
+
 ---
 
 ## Why it exists
