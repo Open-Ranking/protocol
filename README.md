@@ -9,6 +9,16 @@ Open Ranking is a protocol for reputation, ranking, discovery, and trust-aware p
 
 The detailed behavior of each endpoint is defined in separate **OREs** (Open Ranking Enhancements).
 
+## Endpoints
+
+| Endpoint | ORE |
+|---|---|
+| `POST /stats/pubkey` | [ORE-02](02.md) |
+| `POST /rank/pubkeys` | [ORE-03](03.md) |
+| `POST /recommend/pubkeys` | [ORE-04](04.md) |
+| `POST /search/pubkeys` | [ORE-05](05.md) |
+| `POST /followers` | [ORE-06](06.md) |
+
 ---
 
 ## Why it exists
