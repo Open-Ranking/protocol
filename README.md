@@ -13,6 +13,7 @@ The detailed behavior of each endpoint is defined in separate **OREs** (Open Ran
 
 | Endpoint | ORE |
 |---|---|
+| `GET /.well-known/open-ranking` | [ORE-01](01.md) |
 | `POST /stats/pubkey` | [ORE-02](02.md) |
 | `POST /rank/pubkeys` | [ORE-03](03.md) |
 | `POST /recommend/pubkeys` | [ORE-04](04.md) |
