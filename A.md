@@ -10,7 +10,7 @@ This document defines how clients authenticate with Open Ranking providers using
 
 ## Overview
 
-Open Ranking uses [Nostr Web Tokens](https://github.com/pippellia-btc/nostr-web-tokens) for authentication. A NWT is a signed Nostr event of `kind 27519` that conveys signed claims from the client to the provider.
+Open Ranking uses [Nostr Web Tokens](https://github.com/Open-Ranking/nostr-web-tokens) for authentication. A NWT is a signed Nostr event of `kind 27519` that conveys signed claims from the client to the provider.
 
 Clients MUST NOT assume authentication is required or not required for a given provider or endpoint. Clients SHOULD attempt requests unauthenticated and handle authentication errors as they arise.
 
@@ -33,5 +33,5 @@ Providers MUST reject tokens whose `aud` claim does not match their domain.
 
 ## Errors
 
-Authentication error codes and their semantics are defined in the [NWT Error Codes Specification](https://github.com/pippellia-btc/nostr-web-tokens#http-error-codes).  
+Authentication error codes and their semantics are defined in the [NWT Error Codes Specification](https://github.com/Open-Ranking/nostr-web-tokens#http-error-codes).  
 Providers SHOULD include a human-readable description of the problem in the `X-Reason` response header.
