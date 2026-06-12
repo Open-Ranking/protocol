@@ -1,13 +1,7 @@
 # Open Ranking
 
-Open Ranking is a protocol for reputation, ranking, discovery, and trust-aware profile services on top of Nostr. It defines a standard HTTP interface that specialized providers can implement, giving clients a simple and interoperable way to ask for:
-
-- reputation scores for one or more pubkeys
-- ranked recommendations
-- profile search results
-- provider capabilities and supported algorithms
-
-The detailed behavior of each endpoint is defined in separate **OREs** (Open Ranking Enhancements).
+Open Ranking is a protocol for reputation, ranking, discovery, and trust services on top of Nostr.  
+It defines a standard HTTP interface that specialized providers can implement, giving clients and users the freedom to swap providers and choose their preferred one(s).
 
 ## Endpoints
 
