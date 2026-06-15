@@ -24,7 +24,7 @@ Authorization: Nostr <base64url-no-padding-token>
 
 ## Audience
 
-Clients MUST set the `aud` claim to the provider's domain name.  
+Clients MUST set the `aud` claim to the provider's domain name (e.g. `wot.example.com`)
 Providers MUST reject tokens whose `aud` claim does not match their domain.
 
 ```json
