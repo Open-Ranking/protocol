@@ -48,7 +48,7 @@ Several attempts have been made to move this work off the client:
 
 ### What Open Ranking does instead
 
-Reputation metrics, rankings, and search all require indexing a vast number of events and running a robust pipeline to stay up-to date. This is heavy work that should not live on relays. Relays should stay simple, cheap to run, and easy to self-host, because that fosters decentralization.
+Reputation metrics, rankings, and search all require indexing a vast number of events and running a robust pipeline to stay up-to-date. This is heavy work that should not live on relays. Relays should stay simple, cheap to run, and easy to self-host, because that fosters decentralization.
 
 Open Ranking moves this heavy work to **dedicated providers** that can specialize in it and compete on quality. The protocol defines a shared standard interface so that providers are interoperable: clients talk to any provider the same way, and users can switch providers freely.
 
@@ -106,4 +106,4 @@ Draft.
 
 ## License
 
-To be defined.
+[MIT](LICENSE).
