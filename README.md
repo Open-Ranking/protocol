@@ -7,7 +7,7 @@ It defines a standard HTTP interface that specialized providers can implement, g
 
 | Endpoint | ORE |
 |---|---|
-| `GET /.well-known/open-ranking` | [ORE-01](01.md) |
+| `GET /.well-known/open-ranking.json` | [ORE-01](01.md) |
 | `POST /stats/pubkey` | [ORE-02](02.md) |
 | `POST /rank/pubkeys` | [ORE-03](03.md) |
 | `POST /recommend/pubkeys` | [ORE-04](04.md) |
@@ -70,7 +70,7 @@ Providers are free to define and name their own ranking and search algorithms. T
 
 ### Machine-discoverable capabilities
 
-Every provider exposes a capabilities document at a standard well-known location (`/.well-known/open-ranking`). That document tells clients which endpoints and algorithms the provider supports. Clients can adapt to any provider programmatically, without relying on human-readable documentation.
+Every provider exposes a capabilities document at a standard well-known location (`/.well-known/open-ranking.json`). That document tells clients which endpoints and algorithms the provider supports. Clients can adapt to any provider programmatically, without relying on human-readable documentation.
 
 ### No unnecessary bloat
 
@@ -87,7 +87,7 @@ A server that implements one or more Open Ranking endpoints. Providers are free 
 A provider-defined ranking or search strategy, identified by an opaque string. Algorithms are the provider's differentiator. A provider may expose multiple algorithms for the same endpoint.
 
 ### Capability document
-A small discovery document served at `/.well-known/open-ranking`. It tells clients which endpoints the provider supports and which algorithms are available for each, including the default. Business model, pricing, and other provider-specific information are intentionally not part of this document.
+A small discovery document served at `/.well-known/open-ranking.json`. It tells clients which endpoints the provider supports and which algorithms are available for each, including the default. Business model, pricing, and other provider-specific information are intentionally not part of this document.
 
 ### ORE
 An **Open Ranking Enhancement**. OREs are the specification documents that define the exact behavior of endpoints, discovery mechanisms, and protocol rules, similar to how NIPs work for Nostr. Providers are not required to implement every ORE. Some OREs will be required for compliance, others optional.
