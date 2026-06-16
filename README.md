@@ -13,6 +13,7 @@ It defines a standard HTTP interface that specialized providers can implement, g
 | `POST /recommend/pubkeys` | [ORE-04](04.md) |
 | `POST /search/pubkeys` | [ORE-05](05.md) |
 | `POST /followers` | [ORE-06](06.md) |
+| `POST /leak/pubkeys` | [ORE-08](08.md) |
 
 ## Auth, Payments & Discovery
 
