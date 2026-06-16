@@ -14,7 +14,7 @@ It defines a standard HTTP interface that specialized providers can implement, g
 | `POST /search/pubkeys` | [ORE-05](05.md) |
 | `POST /followers` | [ORE-06](06.md) |
 | `POST /muters` | [ORE-07](07.md) |
-| `POST /leak/pubkeys` | [ORE-08](08.md) |
+| `POST /compromised/pubkeys` | [ORE-08](08.md) |
 
 ## Auth, Payments & Discovery
 
