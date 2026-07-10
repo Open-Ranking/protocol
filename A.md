@@ -31,6 +31,14 @@ Providers MUST reject tokens whose `aud` claim does not match their domain.
 ["aud", "wot.example.com"]
 ```
 
+## Scope
+
+Clients MUST set the `proto` claim to `"open-ranking"`. Providers MUST require it and reject tokens where the `proto` claim is absent or does not match.
+
+```json
+["proto", "open-ranking"]
+```
+
 ## Errors
 
 Authentication error codes and their semantics are defined in the [NWT Error Codes Specification](https://github.com/Open-Ranking/nostr-web-tokens#http-error-codes).  
